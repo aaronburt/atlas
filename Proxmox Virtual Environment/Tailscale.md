@@ -1,5 +1,4 @@
 
-
 Setting up Tailscale on the Proxmox Virtual Environment is very simple. It's essential to note that, from Tailscale's perspective, every LXC and VM is treated as a distinct device, impacting the overall device count. Each device comes with its Wireguard connection and private IP address, among other features. This is a viable alternative to Cloudflare tunnels for most private use cases. 
 
 ### Downloading
