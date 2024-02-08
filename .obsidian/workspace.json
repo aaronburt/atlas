@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proxmox Virtual Environment/Tailscale.md",
+                "file": "Proxmox Virtual Environment/Post-install Setup.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Proxmox Virtual Environment/Tailscale.md",
+                "file": "Proxmox Virtual Environment/Post-install Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Proxmox Virtual Environment/Tailscale.md",
+                "file": "Proxmox Virtual Environment/Post-install Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Proxmox Virtual Environment/Tailscale.md"
+                "file": "Proxmox Virtual Environment/Post-install Setup.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "5f78164b5ecda25d",
   "lastOpenFiles": [
-    "Proxmox Virtual Environment/Post-install Setup.md",
     "Proxmox Virtual Environment/Tailscale.md",
+    "Proxmox Virtual Environment/Post-install Setup.md",
     "Nginx Proxy Manager/Setup.md",
     "Nginx Proxy Manager/Add a custom route.md",
     "Nginx Proxy Manager",
