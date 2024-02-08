@@ -2,7 +2,7 @@
 This is a Post-install setup guide for Proxmox Virtual Environment (PVE), not to be confused with the mail gateway service of a similar name. Proxmox allows deploy VM's and a lightweight alternative called LXC (Linux Containers) all from one centralised web GUI accessible on port 8006.
 
 Once the standard installation has finished you first need to run this Post-install script from 
-https://tteck.github.io/Proxmox/
+[here](https://tteck.github.io/Proxmox/)
 
 It will remove subscription required repos and replace them with free alternatives, update and upgrade all repos ensuring you have the latest versions of everything. Edit some minor CSS tweaks to remove Proxmox 'reminders' for requiring a subscription. 
 
