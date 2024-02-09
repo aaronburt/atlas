@@ -30,4 +30,11 @@ bash -c "$(wget -qO - https://github.com/tteck/Proxmox/raw/main/ct/alpine-docker
 
 ### Installing on LXC via curl 
 
-Firstly create an Unprivileged container 
+First, create an unprivileged Linux container. 
+
+Update
+
+
+```bash
+curl https://get.docker.com | sh
+```
