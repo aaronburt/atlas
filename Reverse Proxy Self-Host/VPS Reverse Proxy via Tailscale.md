@@ -7,7 +7,7 @@ Your goal is to share local services like a [Homepage](https://gethomepage.dev) 
 
 You will need the following in order to follow this guide. 
 
-* Affordable VPS with root access 
+* Debian VPS with root access (Updated with `apt-get update && apt-get upgrade -y `)
 	* Recommend Oracle for free 
 	* Scaleway for cheap European based
 	* Google Cloud for secure
@@ -20,20 +20,27 @@ The idea is that the VPS will host a [Reverse Proxy](https://www.cloudflare.com/
 
 ### The Execution 
 
-First you will need to install Tailscale on your local machine and login either on Linux by using `tailscale up` command or on Windows by using the application. 
 
-Next SSH into the VPS in question and again install [Download](https://tailscale.com/download/linux) Tailscale and run `Tailscale up` to login. Next verify that the Tailscale client has established connection successfully to the Coordination server (Ran by Tailscale) and is able to 'See' the other device. 
+#### Setting up tailscale
 
-Easiest way to check the devices are `Online` is by going to the Coordination service's admin panel [here](https://login.tailscale.com/admin/machines). You should see a List of `Machines` with the Machine, Addresses, Version and Last Seen. Take a note of the machine names, they normally try to follow the `Hostname` of the device they came from.  If the last seen says Connected then its all good as far as the Coordination server is concerned. 
+To set things up, first, install Tailscale on your local machine. If you're on Linux, run `curl -fsSL https://tailscale.com/install.sh | sh` command followed by `tailscale up` command; if you're on Windows, use the application.
 
-Following on from that we need to verify that the VPS can talk to the Local machine. To do this in either the VPS or the Local machine open a terminal window and run
-``
-```bash
+Next, SSH into your VPS and install Tailscale. Confirm that the Tailscale client connects to the Coordination server successfully. You can check device status in the Coordination service's admin panel [here](https://login.tailscale.com/admin/machines).
+
+Make sure the listed machines show as 'Connected.' Now, confirm communication between the VPS and the local machine. Open a terminal window on either system and run:
+
+```
 tailscale status
 ```
 
-It should list all the machines its ACL policies allow it to see. 
+This command should display all machines allowed by your ACL policies. Next, run `tailscale ping` followed by the machine name (e.g., `tailscale ping desktop`) to check connectivity. If it says 'via Derp,' don't worry; it might take a few hours to establish a direct connection. This relayed connection is still secure, utilizing Wireguard end-to-end, albeit a bit slower.
+
+### Setting up Docker 
+
+Docker installation is rather simple on Debian based machines. You only need execute this one-liner provided by Docker themselves. 
 
 ```bash
-100.111.13.102  ct-adguard           tagged-devices linux   active; direct 192.168.1.249:41641, tx 306732 rx 467076
+curl https://get.docker.com | sh
 ```
+
+This will install Docker, Docker-cli and Docker compose all 
