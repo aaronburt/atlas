@@ -11,8 +11,12 @@
             "id": "425693d391e27bbf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md",
+                "file": "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md",
+                "file": "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md"
+                "file": "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md"
               }
             }
           }
@@ -143,8 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e502df3fcaaf622b",
+  "active": "425693d391e27bbf",
   "lastOpenFiles": [
+    "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md",
+    "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
+    "Reverse Proxy Self-Host",
     "Proxmox Virtual Environment/Post-install Setup.md",
     "Proxmox Virtual Environment/Docker/Docker - Intro.md",
     "Proxmox Virtual Environment/Docker/Installing on VM.md",
@@ -155,7 +162,6 @@
     "2024-02-09.md",
     "Untitled.canvas",
     "Proxmox Virtual Environment/Docker/Installation via Proxmox Scripts.md",
-    "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md",
     "Proxmox Virtual Environment/Tailscale/Installing from LXC.md",
     "Proxmox Virtual Environment/Docker/Installing on LXC via curl.md",
     "Proxmox Virtual Environment/Tailscale",
