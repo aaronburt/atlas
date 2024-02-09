@@ -32,9 +32,17 @@ bash -c "$(wget -qO - https://github.com/tteck/Proxmox/raw/main/ct/alpine-docker
 
 First, create an unprivileged Linux container. 
 
-Update
+Update and upgrade the container to ensure all patches are installed
+```bash
+apt-get update && apt-get upgrade -y
+```
 
+Install curl as it doesn't come with most installations of Debian/Ubuntu by default for LXC's
+```bash
+apt install curl -y
+```
 
+Install docker and docker compose
 ```bash
 curl https://get.docker.com | sh
 ```
