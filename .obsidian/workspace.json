@@ -147,11 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e502df3fcaaf622b",
+  "active": "289293c64f393152",
   "lastOpenFiles": [
-    "gethomepage.dev.md",
-    "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
     "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
+    "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
+    "gethomepage.dev.md",
     "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md",
     "Reverse Proxy Self-Host",
     "Proxmox Virtual Environment/Post-install Setup.md",

@@ -87,5 +87,21 @@ Email:    admin@example.com
 Password: changeme
 ```
 
-Once you have changed the credentials of the account in question you are now free to use the User interface to start proxying addresses. Tailscale addresses such as your local machines address can be accessed either via the Tailscale IP address (e.g. 100.121.107.58) or via the Tailnet DNS name if you've enabled `Magic DNS` on the admin panel. (e.g. local-machine.random-word.ts.net)
+After updating the account credentials, you're good to go with the User Interface to initiate address proxying. Tailscale addresses, like your local machine's, can be reached using either the Tailscale IP address (e.g., 100.121.107.58) or the Tailnet DNS name if you've enabled 'Magic DNS' on the admin panel (e.g., local-machine.random-word.ts.net). Dealing with SSL certs creation, management, and DNS service setup involves too much variation for me to cover, so I'll leave that in your capable hands.
 
+### ACL Polices 
+
+Access Control List are very easier to make mistakes with, You are attempting to narrowly allow as much access to machines as deemed necessary without breaking things, it can sometimes be an extremely fine line. 
+
+By default Tailscale links each machine to you, that's why your email address is below each of the machines on the admin panel, because you own it. We need to decouple your email from the machine to be useable in the ACL polices. 
+
+We first do this by defining a `tag`, which revokes your ownership of that machine directly meaning they have no permissions to talk or listen on the network unless directly specified. 
+
+
+Let's first create a group for multiple users to have ownership of `tag`
+
+```json
+	"groups": {
+		"group:admin": ["example@gmail.com"],
+	},
+```
