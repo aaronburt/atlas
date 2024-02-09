@@ -20,4 +20,20 @@ The idea is that the VPS will host a [Reverse Proxy](https://www.cloudflare.com/
 
 ### The Execution 
 
-First you will need to insta
+First you will need to install Tailscale on your local machine and login either on Linux by using `tailscale up` command or on Windows by using the application. 
+
+Next SSH into the VPS in question and again install [Download](https://tailscale.com/download/linux) Tailscale and run `Tailscale up` to login. Next verify that the Tailscale client has established connection successfully to the Coordination server (Ran by Tailscale) and is able to 'See' the other device. 
+
+Easiest way to check the devices are `Online` is by going to the Coordination service's admin panel [here](https://login.tailscale.com/admin/machines). You should see a List of `Machines` with the Machine, Addresses, Version and Last Seen. Take a note of the machine names, they normally try to follow the `Hostname` of the device they came from.  If the last seen says Connected then its all good as far as the Coordination server is concerned. 
+
+Following on from that we need to verify that the VPS can talk to the Local machine. To do this in either the VPS or the Local machine open a terminal window and run
+``
+```bash
+tailscale status
+```
+
+It should list all the machines its ACL policies allow it to see. 
+
+```bash
+100.111.13.102  ct-adguard           tagged-devices linux   active; direct 192.168.1.249:41641, tx 306732 rx 467076
+```
