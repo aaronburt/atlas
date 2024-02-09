@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proxmox Virtual Environment/Docker/Intro.md",
+                "file": "Proxmox Virtual Environment/Tailscale.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Proxmox Virtual Environment/Docker/Intro.md",
+                "file": "Proxmox Virtual Environment/Tailscale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Proxmox Virtual Environment/Docker/Intro.md",
+                "file": "Proxmox Virtual Environment/Tailscale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Proxmox Virtual Environment/Docker/Intro.md"
+                "file": "Proxmox Virtual Environment/Tailscale.md"
               }
             }
           }
@@ -147,17 +147,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d73176ea5f91302",
+  "active": "e502df3fcaaf622b",
   "lastOpenFiles": [
     "Proxmox Virtual Environment/Post-install Setup.md",
+    "Proxmox Virtual Environment/Tailscale/Untitled.md",
+    "Proxmox Virtual Environment/Tailscale.md",
+    "Proxmox Virtual Environment/Tailscale",
+    "Proxmox Virtual Environment/Docker/Installing on LXC via curl.md",
     "Proxmox Virtual Environment/Docker/Installing on VM.md",
     "Proxmox Virtual Environment/Docker/Intro.md",
-    "Proxmox Virtual Environment/Docker/Installing on LXC via curl.md",
     "Proxmox Virtual Environment/Docker/Installation via Proxmox Scripts.md",
     "Installation.md",
     "().md",
     "Proxmox Virtual Environment/Docker",
-    "Proxmox Virtual Environment/Tailscale.md",
     "Nginx Proxy Manager/Setup.md",
     "Nginx Proxy Manager/Add a custom route.md",
     "Nginx Proxy Manager",
