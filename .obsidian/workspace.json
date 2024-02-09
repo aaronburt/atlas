@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cb492401734bf1d2",
+        "id": "9420fdf94020219d",
         "type": "tabs",
         "children": [
           {
-            "id": "5f78164b5ecda25d",
+            "id": "8d73176ea5f91302",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -147,15 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e502df3fcaaf622b",
+  "active": "8d73176ea5f91302",
   "lastOpenFiles": [
-    "Proxmox Virtual Environment/Docker/Installation via Proxmox Scripts.md",
-    "Proxmox Virtual Environment/Docker/Intro.md",
+    "Proxmox Virtual Environment/Post-install Setup.md",
     "Proxmox Virtual Environment/Docker/Installing on VM.md",
+    "Proxmox Virtual Environment/Docker/Intro.md",
     "Proxmox Virtual Environment/Docker/Installing on LXC via curl.md",
+    "Proxmox Virtual Environment/Docker/Installation via Proxmox Scripts.md",
+    "Installation.md",
+    "().md",
     "Proxmox Virtual Environment/Docker",
     "Proxmox Virtual Environment/Tailscale.md",
-    "Proxmox Virtual Environment/Post-install Setup.md",
     "Nginx Proxy Manager/Setup.md",
     "Nginx Proxy Manager/Add a custom route.md",
     "Nginx Proxy Manager",
