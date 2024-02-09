@@ -1,7 +1,7 @@
 
 ### Goal 
 
-Your goal is to share local services like a [Homepage](https://gethomepage.dev) but you don't want to use Cloudflare Tunnels or expose you personal network IP address to the internet. You might be also be unable to do so as your network is inside a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT)
+Your goal is to share local services like a [Homepage](https://gethomepage.dev) but you don't want to use Cloudflare Tunnels or expose your personal network IP address to the internet. You might be also be unable to do so as your network is inside a [CGNAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT)
 
 ### Requirements
 
@@ -76,11 +76,11 @@ services:
 
 Next boot up the container with `docker compose up -d`
 
-Initiate the NPM container by executing the command. Upon successful execution, the output should indicate 'created' followed by an ID. Verify the running container status using `docker ps`.
+Upon successful execution, the output should indicate 'created' followed by an ID. Verify the running container status using `docker ps`.
 
 #### Signing into NPM
 
-It's very import to login to the admin panel of the NPM as you need to change the username and password from their insecure defaults. 
+It's very important to login to the admin panel of the NPM as you need to change the username and password from their insecure defaults. 
 
 ```
 Email:    admin@example.com
@@ -89,7 +89,7 @@ Password: changeme
 
 After updating the account credentials, you're good to go with the User Interface to initiate address proxying. Tailscale addresses, like your local machine's, can be reached using either the Tailscale IP address (e.g., 100.121.107.58) or the Tailnet DNS name if you've enabled 'Magic DNS' on the admin panel (e.g., local-machine.random-word.ts.net). Dealing with SSL certs creation, management, and DNS service setup involves too much variation for me to cover, so I'll leave that in your capable hands.
 
-### ACL Polices 
+### ACL Policies 
 
 Access Control List are very easier to make mistakes with, You are attempting to narrowly allow as much access to machines as deemed necessary without breaking things, it can sometimes be an extremely fine line. 
 
