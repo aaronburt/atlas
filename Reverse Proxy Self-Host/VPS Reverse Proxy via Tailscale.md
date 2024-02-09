@@ -18,9 +18,6 @@ You will need the following in order to follow this guide.
 
 The idea is that the VPS will host a [Reverse Proxy](https://www.cloudflare.com/en-gb/learning/cdn/glossary/reverse-proxy/) called [Nginx Proxy Manager](https://nginxproxymanager.com/) and will talk via an Tailscale Wireguard encrypted tunnel to a local machine on your personal network that will host the application in question. This means important credentials don't need to be saved on the VPS and your public IPV4 address doesn't need to be open to the elements. 
 
-### The Execution 
-
-
 #### Setting up tailscale
 
 To set things up, first, install Tailscale on your local machine. If you're on Linux, run `curl -fsSL https://tailscale.com/install.sh | sh` command followed by `tailscale up` command; if you're on Windows, use the application.
@@ -37,10 +34,46 @@ This command should display all machines allowed by your ACL policies. Next, run
 
 ### Setting up Docker 
 
-Docker installation is rather simple on Debian based machines. You only need execute this one-liner provided by Docker themselves. 
+Installing Docker on Debian-based machines is straightforward. Simply run the following one-liner provided by Docker:
 
 ```bash
 curl https://get.docker.com | sh
 ```
 
-This will install Docker, Docker-cli and Docker compose all 
+This command will install Docker, Docker-cli, and Docker Compose, essential components for running Nginx Proxy Manager.
+
+Check Docker is running with `docker run hello-world`, this will pull, run and output to the user a docker script that just says hello to verify docker is working as intended
+
+#### Optional but recommended
+
+For enhanced security, I highly recommend establishing a 'Rootless' user and including this user in the 'Docker' group. This allows the user to execute Docker commands without granting containers excessive permissions.
+
+```bash
+sudo useradd -m nginx
+sudo usermod -aG docker nginx
+```
+
+### Setting up Nginx Proxy Manager
+
+* First create a folder called Nginx
+* Inside create a file called docker-compose.yml with the contents of below (e.g. nano docker-compose.yml)
+
+```yml
+version: '3.8'
+services:
+  app:
+    container_name: 'NginxProxyManager'
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+```
+
+Next boot up the container with `docker compose up -d`
+
+This should start pulling and running the NPM container THEN 
