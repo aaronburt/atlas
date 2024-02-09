@@ -93,15 +93,38 @@ After updating the account credentials, you're good to go with the User Interfac
 
 Access Control List are very easier to make mistakes with, You are attempting to narrowly allow as much access to machines as deemed necessary without breaking things, it can sometimes be an extremely fine line. 
 
-By default Tailscale links each machine to you, that's why your email address is below each of the machines on the admin panel, because you own it. We need to decouple your email from the machine to be useable in the ACL polices. 
+By default, Tailscale associates each machine with your email address, visible in the admin panel, indicating ownership. To make ACL policies effective, we must disconnect your email from the machine.
 
-We first do this by defining a `tag`, which revokes your ownership of that machine directly meaning they have no permissions to talk or listen on the network unless directly specified. 
+This is achieved by introducing a 'tag' that removes your direct ownership, rendering the machine without network permissions unless explicitly specified.
 
-
-Let's first create a group for multiple users to have ownership of `tag`
+Let's start by creating a group to collectively own the 'tag':
 
 ```json
 	"groups": {
 		"group:admin": ["example@gmail.com"],
 	},
 ```
+
+Next, define the existence of the tag for application to the machine:
+
+```json
+	"tagOwners": {
+		"tag:external":  ["group:admin"],
+	},
+```
+
+Finally, specify where the tags are allowed to connect, including the option to designate other tags as destinations:
+
+```json
+"acls": [
+	{
+		"action": "accept",
+		"src":    ["tag:external"],
+		"dst":    ["100.111.13.102:53", "local:*"],
+	},
+]
+```
+
+In this example, the tag 'external' has access to view port 53 on the 102 address and any port on machines tagged as 'local'. To apply these tags, navigate to the Tailscale admin panel, click the three dots next to 'Last Seen' for each machine, and select 'Edit ACL Tags...'.
+
+Be cautious, as selecting any ACL will require a full reauthentication of the machine if removal is attempted later on.

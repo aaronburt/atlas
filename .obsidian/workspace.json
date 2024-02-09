@@ -11,12 +11,8 @@
             "id": "289293c64f393152",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -149,8 +141,9 @@
   },
   "active": "289293c64f393152",
   "lastOpenFiles": [
-    "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
+    "2024-02-09.md",
     "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
+    "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
     "gethomepage.dev.md",
     "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md",
     "Reverse Proxy Self-Host",
@@ -161,7 +154,6 @@
     "Proxmox Virtual Environment/Tailscale/Downloading.md",
     "Proxmox Virtual Environment/Tailscale/Installing with Proxmox Scripts.md",
     "Proxmox Virtual Environment/Tailscale/Installing on the Shell.md",
-    "2024-02-09.md",
     "Untitled.canvas",
     "Proxmox Virtual Environment/Docker/Installation via Proxmox Scripts.md",
     "Proxmox Virtual Environment/Tailscale/Installing from LXC.md",
