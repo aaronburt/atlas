@@ -11,6 +11,11 @@
       "ctime": 1707447050618,
       "path": "Proxmox Virtual Environment/Tailscale/Tailscale - Intro.md",
       "title": "PVE - Tailscale"
+    },
+    {
+      "type": "file",
+      "ctime": 1707447565718,
+      "path": "Proxmox Virtual Environment/Post-install Setup.md"
     }
   ]
 }

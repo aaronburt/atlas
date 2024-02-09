@@ -6,6 +6,7 @@ Alternatively, you can host Tailscale with a personal `Headscale` coordination s
 
 ## Various methods of setup 
 
-* [Installing with Proxmox Scripts](obsidian://open?vault=Atlas&file=Proxmox%20Virtual%20Environment%2FTailscale%2FInstalling%20with%20Proxmox%20Scripts)
-* [Installing on LXC](obsidian://open?vault=Atlas&file=Proxmox%20Virtual%20Environment%2FTailscale%2FInstalling%20from%20LXC)
-* [Installing on the Proxmox Shell](obsidian://open?vault=Atlas&file=Proxmox%20Virtual%20Environment%2FTailscale%2FInstalling%20on%20the%20Shell)
+* [[Installing with Proxmox Scripts]]
+* [[Installing from LXC]]
+* [[Installing on the Shell]]
+
