@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "968c6a5a07492a6b",
+        "id": "e0e534f30065bf46",
         "type": "tabs",
         "children": [
           {
-            "id": "425693d391e27bbf",
+            "id": "289293c64f393152",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
+                "file": "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
+                "file": "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
+                "file": "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md"
+                "file": "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md"
               }
             }
           }
@@ -147,10 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "425693d391e27bbf",
+  "active": "e502df3fcaaf622b",
   "lastOpenFiles": [
-    "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md",
+    "gethomepage.dev.md",
+    "Reverse Proxy Self-Host/VPS Reverse Proxy via Tailscale.md",
     "Reverse Proxy Self-Host/Reverse Proxy Self Hosted.md",
+    "Proxmox Virtual Environment/Nginx Proxy Manager/NPM - Intro.md",
     "Reverse Proxy Self-Host",
     "Proxmox Virtual Environment/Post-install Setup.md",
     "Proxmox Virtual Environment/Docker/Docker - Intro.md",
