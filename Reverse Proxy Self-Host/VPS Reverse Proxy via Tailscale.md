@@ -55,8 +55,8 @@ sudo usermod -aG docker nginx
 
 ### Setting up Nginx Proxy Manager
 
-* First create a folder called Nginx
-* Inside create a file called docker-compose.yml with the contents of below (e.g. nano docker-compose.yml)
+* Begin by establishing a directory named "Nginx."
+* Within this directory, generate a file named "docker-compose.yml" and input the provided contents (e.g., using nano: `nano docker-compose.yml`).
 
 ```yml
 version: '3.8'
@@ -76,4 +76,16 @@ services:
 
 Next boot up the container with `docker compose up -d`
 
-This should start pulling and running the NPM container THEN 
+Initiate the NPM container by executing the command. Upon successful execution, the output should indicate 'created' followed by an ID. Verify the running container status using `docker ps`.
+
+#### Signing into NPM
+
+It's very import to login to the admin panel of the NPM as you need to change the username and password from their insecure defaults. 
+
+```
+Email:    admin@example.com
+Password: changeme
+```
+
+Once you have changed the credentials of the account in question you are now free to use the User interface to start proxying addresses. Tailscale addresses such as your local machines address can be accessed either via the Tailscale IP address (e.g. 100.121.107.58) or via the Tailnet DNS name if you've enabled `Magic DNS` on the admin panel. (e.g. local-machine.random-word.ts.net)
+
