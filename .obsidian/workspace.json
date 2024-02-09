@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proxmox Virtual Environment/Tailscale/Tailscale.md",
+                "file": "Proxmox Virtual Environment/Tailscale/Tailscale - Intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Proxmox Virtual Environment/Tailscale/Tailscale.md",
+                "file": "Proxmox Virtual Environment/Tailscale/Tailscale - Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Proxmox Virtual Environment/Tailscale/Tailscale.md",
+                "file": "Proxmox Virtual Environment/Tailscale/Tailscale - Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Proxmox Virtual Environment/Tailscale/Tailscale.md"
+                "file": "Proxmox Virtual Environment/Tailscale/Tailscale - Intro.md"
               }
             }
           }
@@ -147,26 +147,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d73176ea5f91302",
+  "active": "e502df3fcaaf622b",
   "lastOpenFiles": [
-    "Proxmox Virtual Environment/Tailscale/Installing from LXC.md",
-    "Proxmox Virtual Environment/Tailscale/Installing on the Shell.md",
-    "Proxmox Virtual Environment/Tailscale/Installing with Proxmox Scripts.md",
-    "Proxmox Virtual Environment/Tailscale/Downloading.md",
-    "Proxmox Virtual Environment/Tailscale/Tailscale.md",
-    "Proxmox Virtual Environment/Post-install Setup.md",
-    "Proxmox Virtual Environment/Tailscale",
-    "Proxmox Virtual Environment/Docker/Installing on LXC via curl.md",
+    "Proxmox Virtual Environment/Docker/Docker - Intro.md",
     "Proxmox Virtual Environment/Docker/Installing on VM.md",
-    "Proxmox Virtual Environment/Docker/Intro.md",
+    "Proxmox Virtual Environment/Tailscale/Tailscale - Intro.md",
+    "2024-02-09.md",
+    "Untitled.canvas",
     "Proxmox Virtual Environment/Docker/Installation via Proxmox Scripts.md",
+    "Proxmox Virtual Environment/Nginx Proxy Manager/Setup.md",
+    "Proxmox Virtual Environment/Tailscale/Installing with Proxmox Scripts.md",
+    "Proxmox Virtual Environment/Tailscale/Installing from LXC.md",
+    "Proxmox Virtual Environment/Tailscale/Downloading.md",
+    "Proxmox Virtual Environment/Docker/Installing on LXC via curl.md",
+    "Proxmox Virtual Environment/Post-install Setup.md",
+    "Proxmox Virtual Environment/Tailscale/Installing on the Shell.md",
+    "Proxmox Virtual Environment/Tailscale",
     "Installation.md",
     "().md",
     "Proxmox Virtual Environment/Docker",
-    "Nginx Proxy Manager/Setup.md",
     "Nginx Proxy Manager/Add a custom route.md",
-    "Nginx Proxy Manager",
-    "Nginx Proxy Manager",
+    "Proxmox Virtual Environment/Nginx Proxy Manager",
+    "Proxmox Virtual Environment/Nginx Proxy Manager",
     "Proxmox Virtual Environment",
     "Welcome.md"
   ]
